@@ -11,7 +11,7 @@ public class Inventario {
     private Inventario(){}
     public static Inventario ClassInventario(){
         if(instance == null){
-            return new Inventario(); 
+            instance = new Inventario(); 
         }
         return instance; 
     }

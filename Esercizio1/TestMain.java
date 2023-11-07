@@ -16,5 +16,7 @@ public class TestMain {
         myInventario.addToGiocattoli(ciao1);
         myInventario.addToGiocattoli(ciao);
         System.out.println(myInventario);
+
+        RegistroAcquisti registroAcquisti = RegistroAcquisti.ClassRegistroAcquisti(); 
     }
 }
