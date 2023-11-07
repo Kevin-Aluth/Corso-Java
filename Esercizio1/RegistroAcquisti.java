@@ -20,7 +20,16 @@ public class RegistroAcquisti {
     public ArrayList<Vendita> getVendite(){
         return (ArrayList<Vendita>)vendite; 
     }
-    public void addToGiocattoli(Vendita vendita){
+    public void addToVendite(Vendita vendita){
         vendite.add(vendita); 
     } 
+
+    @Override
+    public String toString(){
+        String output = ""; 
+        for(int i = 0; i < vendite.size(); i++){
+            output += vendite.get(i).toString() + "\n"; 
+        }
+        return output;  
+    }
 }

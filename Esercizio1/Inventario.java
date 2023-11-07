@@ -22,9 +22,20 @@ public class Inventario {
     }
     public void addToGiocattoli(Giocattolo giocattolo){
         giocattoli.add(giocattolo); 
+        System.out.println("Giocattolo aggiunto"); 
     } 
-    public void removeFromGiocattoli(Giocattolo giocattolo){
-        giocattoli.remove(giocattolo); 
+    public void removeFromGiocattoli(int id){
+        Giocattolo activeGiocattolo = null; 
+        for(Giocattolo i : giocattoli){
+            if(i.getId() == id){
+                activeGiocattolo = i; 
+                break; 
+            }
+        }
+        if(activeGiocattolo != null) {
+            giocattoli.remove(activeGiocattolo); 
+            System.out.println("Giocattolo rimosso");
+        } else System.out.println("Id non trovato"); 
     }
 
     @Override

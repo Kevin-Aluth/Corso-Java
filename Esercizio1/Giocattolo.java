@@ -47,6 +47,7 @@ public class Giocattolo{
     public String toString(){
         return name +
         ", Prezzo: " + price +
-        ", Eta' raccomandata: " + recomendedAge; 
+        ", Eta' raccomandata: " + recomendedAge +
+        ", Id: " + myId; 
     }
 }

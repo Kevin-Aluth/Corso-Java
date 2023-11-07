@@ -1,9 +1,15 @@
 package Esercizio1; 
 
 public abstract class RegistroVendite{
-    void buy(Giocattolo giocattolo, Cliente cliente){
-        cliente.setMoneyAmt(cliente.getMoneyAmt() - giocattolo.getPrice());
-        RegistroAcquisti registroAcquisti = RegistroAcquisti.ClassRegistroAcquisti(); 
-        registroAcquisti.addToGiocattoli(new Vendita(giocattolo, cliente));
+    static void buy(Giocattolo giocattolo, Cliente cliente){
+        if(cliente.getMoneyAmt() >= giocattolo.getPrice()){
+            cliente.setMoneyAmt(cliente.getMoneyAmt() - giocattolo.getPrice());
+            RegistroAcquisti registroAcquisti = RegistroAcquisti.ClassRegistroAcquisti(); 
+            registroAcquisti.addToVendite(new Vendita(giocattolo, cliente));
+            System.out.println("Giocattolo acquistato. ");
+        }
+        else{
+            System.out.println("Impossibile acquistare, fondi insufficienti. "); 
+        }
     }
 }
