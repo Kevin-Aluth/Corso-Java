@@ -42,4 +42,11 @@ public class Giocattolo{
         this.price = price; 
         this.recomendedAge = recomendedAge; 
     }
+
+    @Override 
+    public String toString(){
+        return name +
+        ", Prezzo: " + price +
+        ", Eta' raccomandata: " + recomendedAge; 
+    }
 }
