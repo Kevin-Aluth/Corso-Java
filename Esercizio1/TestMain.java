@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class TestMain extends RegistroVendite {
     static Scanner myScanner = new Scanner(System.in); ; 
-    static Account activeAccount = new Cliente("Kevin", "Kevinoh", 100); 
+    static Account activeAccount = new Admin("Kevin", "Kevinoh"); 
     static Inventario inventario = Inventario.ClassInventario(); 
     static RegistroAcquisti registroAcquisti = RegistroAcquisti.ClassRegistroAcquisti(); 
     public static void main(String[] args) {

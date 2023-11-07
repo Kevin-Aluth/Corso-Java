@@ -1,6 +1,6 @@
 package Esercizio1;
 
-public class Account {
+public abstract class Account {
     public static int id = 1;
     private int myId;  
     private String name; 
