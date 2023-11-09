@@ -12,6 +12,8 @@ public class TestMain extends RegistroVendite {
     public static void main(String[] args) {
         System.out.println("Ciao da Main");
 
+        System.out.println("Ciao da MyBranch");
+
         //adding toys
         inventario.addToGiocattoli(new Giocattolo("Palla", 10, 10));
         inventario.addToGiocattoli(new Giocattolo("Slime", 5, 10));
